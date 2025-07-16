@@ -26,8 +26,8 @@ class UserRequest extends FormRequest
             'email' => 'required|string|email',
             'password' => 'required|string| min:6',
             'image_path' => 'nullable|string',
-            'phone_number' => 'nullable|string|max:15',
-            "role" => "required|string|in:nomal_user,admin",
+            'phone_number' => 'nullable|string|size:9',
+            "roles" => "required|string",
             "status" => "nullable|in:1,2",
            
         ];
